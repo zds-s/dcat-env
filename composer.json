@@ -1,0 +1,35 @@
+{
+    "name": "death_satan/dcat-env",
+    "alias": "dcat-env",
+    "description": "dcat-admin quick edit .env",
+    "type": "library",
+    "keywords": [
+        "dcat-admin",
+        "extension"
+    ],
+    "homepage": "https://github.com/death_satan/dcat-env",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Death-SaTan",
+            "email": "2771717608@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "dcat/laravel-admin": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SaTan\\Dcat\\EnvHelper\\": "src/"
+        }
+    },
+    "extra": {
+        "dcat-admin": "SaTan\\Dcat\\EnvHelper\\DcatEnvServiceProvider",
+        "laravel": {
+            "providers": [
+                "SaTan\\Dcat\\EnvHelper\\DcatEnvServiceProvider"
+            ]
+        }
+    }
+}
